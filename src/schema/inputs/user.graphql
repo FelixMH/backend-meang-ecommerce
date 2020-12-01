@@ -1,0 +1,19 @@
+
+"Input para añadir los datos del usuario en el registro."
+
+input UserInput {
+    "Id único"
+    id: ID
+    "Nombre de pila del usuario"
+    name: String!
+    "Apellido(s) del usuario."
+    lastname: String!
+    "Correo electronico de cada usuario."
+    email: String!
+    "Password asociado a la cuenta."
+    password: String!
+    "Fecha de nacimiento - solo mayores de 18 Años."
+    birthday: String!
+    "Permisos del usuario"
+    role: Role=CLIENT
+}

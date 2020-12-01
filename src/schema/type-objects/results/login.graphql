@@ -1,0 +1,9 @@
+"Objeto de tipo login, que controla lo que retorna el login."
+type ResultLogin implements Result {
+    "Estado de la operación"
+    status: Boolean!
+    "Mensaje de la operación para dar feedback."
+    message: String!
+    "Token del usuario logueado"
+    token: String
+}

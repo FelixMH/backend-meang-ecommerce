@@ -1,0 +1,9 @@
+"Objeto de tipo User que lista el status, mensaje y ."
+type ResultUser implements Result {
+    "Estado de la operación"
+    status: Boolean!
+    "Mensaje de la operación para dar feedback."
+    message: String!
+    "Información del usuario."
+    user: User
+}

@@ -1,0 +1,6 @@
+
+"Tipos de usuario - Permisos del usuario"
+enum Role {
+    CLIENT,
+    ADMIN
+}

@@ -1,0 +1,9 @@
+"Objeto de tipo Users que retorna el status, mensaje y la lista de los usuarios."
+type ResultUsers implements Result {
+    "Estado de la operación"
+    status: Boolean!
+    "Mensaje de la operación para dar feedback."
+    message: String!
+    "Lista de usuarios registrados en la base de datos ( CLIENTES / ADMINS )"
+    users: [User!]!
+}
