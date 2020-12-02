@@ -13,3 +13,4 @@ type Query {
 
     "Mostrar lista de productos"
     products: Boolean
+}

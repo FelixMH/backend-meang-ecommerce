@@ -2,8 +2,7 @@ import { IResolvers } from 'graphql-tools';
 import { COLLECTIONS, MESSAGES, EXPIRE_TIME } from '../../config/constants';
 import JWT from './../../lib/jwt';
 import bcrypt from 'bcrypt';
-import { findOneElement } from './../../lib/db-operations';
-import { findElement } from '../../lib/db-operations';
+import { findOneElement, findElement } from './../../lib/db-operations';
 
 
 const resolversUserQuery: IResolvers = {
@@ -16,7 +15,7 @@ const resolversUserQuery: IResolvers = {
                     users: await findElement(
                         db,
                         COLLECTIONS.USERS
-                    )
+                    ),
                 };
             } catch(err) {
                 console.log(err);

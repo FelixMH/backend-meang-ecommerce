@@ -91,7 +91,8 @@ export const findElement = async (
     collection: string,
     filter: object = {}
 ) => {
-    database
+
+    return await database
         .collection(collection)
         .find(filter)
         .toArray();
